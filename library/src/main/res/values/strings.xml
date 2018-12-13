@@ -1,0 +1,10 @@
+<resources>
+    <string name="search_city">搜索城市</string>
+    <string name="current_location_city">当前定位城市</string>
+    <string name="unkown">未知</string>
+    <string name="latest_visit_city">最近访问的城市</string>
+    <string name="search_city_et_hint">输入城市名或拼音</string>
+    <string name="city_not_found">找不到对应城市\n请检查输入是否正确</string>
+    <string name="location_permission_denied">定位失败,定位权限被禁止或没有打开位置信息开关</string>
+    <string name="located_error">定位失败</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f4f4f4"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="26dp"
+    android:id="@+id/ll_lately_city_root"
+    android:visibility="gone">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:text="@string/latest_visit_city"
+        android:textColor="@color/color_a2a2a2"
+        android:textSize="15sp"/>
+
+    <!-- 如果一个都无，则gone掉，如果不到三个，则invisible掉剩余的
+   如果只有一个，直接visible此就可以了-->
+    <LinearLayout
+        android:id="@+id/ll_lately_city"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_city_border"
+            android:gravity="center"
+            android:text="广州"
+            android:textColor="@color/color_2d2d34"
+            android:textSize="16sp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/selector_city_border"
+            android:textColor="@color/color_2d2d34"
+            android:textSize="16sp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/selector_city_border"
+            android:textColor="@color/color_2d2d34"
+            android:textSize="16sp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</LinearLayout>
